@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>security</class>
+ <widget class="QWidget" name="security">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>452</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>452</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>452</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family:century gothic;
+	font-size:24px;
+}
+#security
+{
+	background-image:url(:/img/background.jpg)
+}
+QFrame
+{
+	background:#333;
+    border-radius: 15px;
+}
+
+QPushButton
+{
+	background:red;
+	border-radius:15px;
+}
+
+QToolButton
+{
+	background:red;
+	border-radius:60px;
+}
+
+QLabel
+{
+	color:white;
+}
+QPushButton:hover
+{
+color:#333;
+border-radius:15px;
+background:white;
+}
+#TbMail
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom: 0.5px solid #717072;
+
+}
+#TbPassword
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom: 0.5px solid #717072;
+
+}
+
+
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>381</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONNEXION</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnLogin">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>320</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connexion</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TbMail">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TbPassword">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Mot de passe</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>121</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../ress.qrc">
+     <normaloff>:/img/User.png</normaloff>:/img/User.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>128</width>
+     <height>128</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../ress.qrc"/>
+ </resources>
+ <connections/>
+</ui>
